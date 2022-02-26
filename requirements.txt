@@ -1,0 +1,10 @@
+Flask
+numpy
+tensorflow
+tqdm
+pickle
+python-multipart
+nltk
+
+
+

@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <style>
+            h1 {text-align: center;}
+            p {text-align: center;}
+            div {text-align: center;}
+            body {text-align: center;}
+            
+            </style>
+    </head>
+    <body style="background-color:powderblue;" >
+        <img src="{{url_for('static',filename='file.jpg')}}">
+        <br>
+        
+        <tr align="left"><h5><td>Predicted Captions: </td></h5></tr>
+        <tr align="left"><td>greedy search : </td><td>{{greedysearch1}}</td><td>, bleu : {{scores[0]}}</td></tr>
+        <br>
+        <tr align="left"><td>Beam Search, K = 3: </td><td>{{beamsearch3}}</td><td>, bleu : {{scores[1]}}</td></tr>
+        <br>
+        <tr align="left"><td>Beam Search, K = 5: </td><td>{{beamsearch5}}</td><td>, bleu : {{scores[2]}}</td></tr>
+        <br>
+        <tr align="left"><td>Beam Search, K = 7: </td><td>{{beamsearch7}}</td><td>, bleu : {{scores[3]}}</td></tr>
+        <br>
+        <tr align="left"><td>Beam Search, K = 10: </td><td>{{beamsearch10}}</td><td>, bleu : {{scores[4]}}</td></tr>
+        <br>
+        <tr align="left"><h5><td>Actual Captions: </td></h5></tr><br>
+        <li><tr align="left"><td>{{actual[0]}}</td></tr></li><br>
+        <li><tr align="left"><td>{{actual[1]}}</td></tr></li><br>
+        <li><tr align="left"><td>{{actual[2]}}</td></tr></li><br>
+        <li><tr align="left"><td>{{actual[3]}}</td></tr></li><br>
+        <li><tr align="left"><td>{{actual[4]}}</td></tr></li><br>
+        <!-- <h5><td>bleu score: </td></h5>{{score}} -->
+    </body>
+</html>
