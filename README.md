@@ -24,7 +24,7 @@ Dataset:
  Model:
  
         Word Vector : Glove (glove.6B.200d.txt)
-        Image feature extraction : Trasfer learning using InceptionV3
+        Image feature extraction : Transfer learning using InceptionV3
         model : LSTM
         
 Evaluation techniques:
